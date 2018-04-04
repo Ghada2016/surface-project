@@ -1,0 +1,317 @@
+/*General Rules*/
+html{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}/*
+*,*:after,*:before{
+	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+	-o-box-sizing: inherit;
+	
+}*/
+ul{
+    list-style: none
+}
+a{
+    text-decoration: none
+}
+button{
+    border: 0
+}
+
+/*Start header*/
+header{
+    background-image: url(../images/header_bg.jpg);
+    height: 700px;
+    position: relative;
+    padding-top: 1%;
+    color: #fff
+}
+/*End header*/
+/*start nav*/
+nav{
+    padding-top: 1%
+}
+nav .logo, nav .purpose{
+    width: 50%;
+    float: left;
+}
+nav .logo{
+    text-transform: uppercase;
+    font-weight: bolder;
+    padding: 2% 0
+}
+nav .purpose{
+    text-align: right;
+    text-transform: uppercase
+}
+/*end nav*/
+
+/*start title*/
+.title{
+    margin-top: 20%;
+    
+}
+.title h1{
+    text-transform: uppercase;
+    font-size: 3em;
+    text-align: left
+}
+.title h1 span{
+    display: block;
+    margin-left: 25%;
+    position: relative
+}
+.title .triangle{
+    position: absolute;
+    left: 35%;
+    top: 25%
+}
+/*end title*/
+
+/*start navbar*/
+.navbar{
+    text-align: right;
+}
+.navbar ul{
+    margin-right: 17%
+}
+.navbar ul li{
+    display: inline-block;
+    margin: 1%
+}
+.navbar ul li a{
+    color: #9071ea;
+    text-transform: uppercase;
+    font-size: 12px
+}
+/*end navbar*/
+
+/*start buttons*/
+.btt{
+    padding-top: 5%;
+    margin-left: 10%
+}
+.btt .ios, .btt .andro{
+    width: 45%;
+    float: left;
+    background-color: #5e42b0;
+    text-transform: uppercase;
+    margin-right: 2%;
+    border-radius: 30px;
+    
+}
+.btt .ios .icon, .btt .andro .icon{
+    width: 30%;
+    float: left
+}
+.btt .ios .txt, .btt .andro .txt{
+    width: 70%;
+    float: left
+}
+.btt .ios .svg-inline--fa , .btt .andro .svg-inline--fa {
+    font-size: 40px;
+    padding-top: 14%
+} 
+.txt p{
+    text-align: left
+}
+.txt p span{
+    display: block;
+    font-weight: bold;
+}
+
+/*end buttons*/
+
+/*start athlets*/
+.athlets{
+    padding-top: 4%
+}
+
+.athlets .player,.athlets .athlet{
+    width: 40%;
+    float: left;
+}
+.athlets .player img{
+    width: 500px;
+}
+.athlets .athlet{
+    margin-left: 15%
+}
+/*end athlets*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*start My framework*/
+.container{
+    width: 80%;
+    margin: auto
+       
+}
+.overlay{
+    position:absolute;
+    background: rgba(15,16,49,.9);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left:0;
+}
+.clear{
+    clear: both
+}
+.text-center{
+    text-align: center
+}
+.triangle{
+    height: 350px;
+    background: #5e42b0;
+    width: 3px;
+    transform: rotate(40deg)
+    
+}
+/*end My framework*/
+
+/***************************************************************Media Query*********************************************************/
+
+@media screen and (max-width:320px){
+    nav .logo, nav .purpose{
+        width: 100%;
+        float: none;
+        text-align: center;
+        padding-top: 6%
+    }
+    nav .purpose p{
+        font-size: 12px
+    }
+    .title{
+        margin-top: 50%
+    }
+    .title h1{
+        font-size: 1.5em;
+        text-align: center
+    }
+    .title h1 span{
+        margin-left: 0
+    }
+    .title .triangle{
+        height: 200px;
+        top: 15%;
+        left: 45%
+    }
+    .navbar{
+        text-align: center;
+        padding-top: 1%
+    }
+    .navbar ul li{
+        display: block;
+        margin: 0;
+        margin-top: 5%
+    }
+    .btt{
+        padding-top: 10%
+    }
+
+    .btt .ios .icon, .btt .andro .icon{
+        width: 100%;
+        float: none;
+        padding-top:0;
+        padding: 1%
+    }
+    .btt .ios .txt, .btt .andro .txt{
+        display: none
+    }
+    .btt .ios .svg-inline--fa , .btt .andro .svg-inline--fa {
+        font-size: 25px; 
+    } 
+  
+}
+@media screen and (min-width:321px) and (max-width:767px){
+     nav .logo, nav .purpose{
+         width: 100%;
+        float: none;
+        text-align: center;
+        padding-top: 6%
+    }
+    .title{
+        margin-top: 50%
+    }
+    .title h1{
+        font-size: 1.5em;
+    }
+   
+    .title .triangle{
+        height: 200px;
+        left: 45%
+    }
+    .navbar{
+        text-align: center;
+        padding-top: 1%
+    }
+   
+   .btt{
+        padding-left: none;
+        padding-top: none;
+        padding: 2%;
+    }
+    .btt .ios, .btt .andro{
+        float: left;
+        width: 47%;
+        margin-left: 1% 
+    }
+    
+    .btt .ios .icon, .btt .andro .icon{
+        width: 100%;
+        float: none
+    }
+    .btt .ios .txt, .btt .andro .txt{
+        width: 100%;
+        float: none;
+    }
+    .btt .ios .svg-inline--fa , .btt .andro .svg-inline--fa {
+        font-size: 20px;
+    } 
+    .txt p{
+        text-align: left;
+        font-size: 12px;
+        text-align: center
+    }
+    .txt p span{
+        display: block;
+        font-weight: bold;
+
+    }
+}
+
+
+
+
+
+

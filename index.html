@@ -7,7 +7,7 @@
 		<title>Surface website</title>
 		<!--Css Files-->
 		<link rel="stylesheet" href="css/normilze.css">
-		<link rel="stylesheet" href="css/mystyle">
+		<link rel="stylesheet" href="css/mystyle.css">
 
 		<!--Favicon-->
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -18,20 +18,29 @@
 	</head>
 	
 	<body>
+        
         <!--Start Header-->
         <header>
+            <!--start overlay-->
+            <div class="overlay">
+            <!--start container-->
+            <div class="container">
             <!--Start nav-->
             <nav>
-                <div class="logo"></div>
+                <div class="logo">
+                    <span><i class="fab fa-shirtsinbulk"></i></span>
+                    <span>surface 1</span>
+                </div>
                 <div class="purpose">
                     <p>For athlets and coaches</p>
                 </div>
             </nav>
             <!--End nav-->
+            <div class="clear"></div>
             <!--Start title part-->
-            <div class="title">
-                <p>be recruited</p>
-                <p>play college sports</p>
+            <div class="title text-center">
+                <div class="triangle"></div>
+                <h1>be recruited <span>play college sports</span></h1>
             </div>
             <!--End title part-->
             <!--Start navbar-->
@@ -46,28 +55,36 @@
             </div>
             <!--End navbar-->
             <!--Start buttons-->
-            <div class="btt">
-                <div class="ios">
-                    <div class="icon"></div>
+            <div class="btt text-center">
+                <button class="ios">
+                    <div class="icon"><i class="fab fa-apple"></i></div>
                     <div class="txt">
                         <p>download on the <span>App store</span></p>
                     </div>
-                </div>
-                <div class="andro">
-                    <div class="icon"></div>
+                </button>
+                <button class="andro">
+                    <div class="icon"><i class="fab fa-google-play"></i></div>
                     <div class="txt">
                         <p>git it on <span>google play</span></p>
                     </div>
-                </div>
+                </button>
             </div>
             <!--End buttons-->
+            </div>
+            <!--end container-->
+            </div>
+            <!--end overlay-->
         </header>
         <!--End Header-->
         <!--Start Athlets-->
         <section class="athlets">
-            <h2>Athlets</h2>
-            <div class="player"></div>        
+            <!--start container-->
+            <div class="container">
+                <div class="player">
+                    <img src="images/rugby%20ball.png" alt="rugby ball">
+                </div>        
             <div class="athlet">
+                <h2>Athlets</h2>
                 <div class="connection">
                     <span>01</span><h3>connection</h3>
                     <p>Connect with coaches directly, you can ping coaches to view profile.</p>
@@ -80,9 +97,12 @@
                     <span>03</span><h3>growth</h3>
                     <p>Resources and tools for you to get better as a student Athelte. Access to training classes, tutor sessions, etc </p>
                 </div>
-            </div>        
+            </div>
+            </div>
+            <!--end container-->
         </section>
         <!--End Athlets-->
+        <div class="clear"></div>
         <!--Start players-->
         <section class="players">
             <h2>Players</h2>
