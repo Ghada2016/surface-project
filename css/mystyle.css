@@ -127,21 +127,137 @@ nav .purpose{
 
 /*start athlets*/
 .athlets{
-    padding-top: 4%
+    padding-top: 4%;
+    position: relative
+}
+.athlets h2{
+    font-size: 3em;
+    text-transform: uppercase;
+    color: #e7e7e7;
+    text-align: right;
+    margin-right: 28%
+    
+}
+.athlets .plyer{
+    position: absolute;
+    top: 1%;
+    z-index: 1;
+    margin-left: 10%;
+    float: left
+}
+.athlets .plyer img{
+    height: 600px;
+    padding-top: 4%;
+}
+.athlets .plyer .triangle{
+    position: absolute;
+    left: 35%;
+    bottom: 12%;
+    height: 600px;
+    z-index: -1
+}
+.athlets .row{
+    height: 145px;
+}
+.athlets .row .connection,
+.athlets .row .collaboration,
+.athlets .row .growth{
+    margin-left: 50%;
+    padding-top: 3%
+    
+}
+.athlets .row:nth-child(4){
+    background-color: #f6f4fa
+}
+.athlets .row:nth-child(5){
+    background-color: #5e42b0
+}
+.athlets .row .connection h3, 
+.athlets .row .collaboration h3,
+.athlets .row .growth h3{
+    display: inline;
+    margin-left: 2%;
+    text-transform: uppercase;
+    color: #c1c1c1
+}
+.athlets .row .connection span, 
+.athlets .row .collaboration span, 
+.athlets .row .growth span{
+    font-weight: bold;
+    border-bottom: 3px solid #5e42b0
+}
+.athlets .row .growth span{
+     border-bottom: 3px solid #fff
+}
+.athlets .row .growth p{
+    color: #fff
 }
 
-.athlets .player,.athlets .athlet{
-    width: 40%;
-    float: left;
-}
-.athlets .player img{
-    width: 500px;
-}
-.athlets .athlet{
-    margin-left: 15%
-}
 /*end athlets*/
 
+/*strat plyers*/
+.players{
+    padding-top: 4%;
+    position: relative
+}
+.players h2{
+    font-size: 3em;
+    text-transform: uppercase;
+    color: #e7e7e7;
+    margin-left: 5%
+}
+.players .row{
+    height: 145px
+}
+.players .row .connection,
+.players .row .collaboration,
+.players .row .growth{
+    padding-top: 3%;
+    margin-right: 50%
+}
+.players .row:nth-child(3){
+    background-color: #f6f4fa
+}
+.players .row:nth-child(4){
+    background-color: #5e42b0
+}
+.players .row .connection h3, 
+.players .row .collaboration h3,
+.players .row .growth h3{
+    display: inline;
+    margin-left: 2%;
+    text-transform: uppercase;
+    color: #c1c1c1
+}
+.players .row .connection span, 
+.players .row .collaboration span, 
+.players .row .growth span{
+    font-weight: bold;
+    border-bottom: 3px solid #5e42b0
+}
+.players .row .growth span{
+     border-bottom: 3px solid #fff
+}
+.players .row .growth p{
+    color: #fff
+}
+.players .plyer{
+    position: absolute;
+    top: 0;
+    left: 40%;
+    z-index: 1
+}
+.players .plyer img{
+    height: 600px;
+}
+.players .plyer .triangle{
+    position: absolute;
+    left: 35%;
+    bottom: 12%;
+    height: 600px;
+    z-index: -1
+}
+/*end plyers*/
 
 
 
@@ -251,7 +367,64 @@ nav .purpose{
     .btt .ios .svg-inline--fa , .btt .andro .svg-inline--fa {
         font-size: 25px; 
     } 
-  
+ 
+    .athlets h2{
+        text-align: center;
+        float: none;
+        margin-right: 0;
+        padding-left: 5%
+    }
+    .athlets .plyer{
+        width: 100%;
+        margin-left: auto
+    }
+    .athlets .plyer img{
+        height: 400px;
+        padding-top: 35%
+    }
+    .athlets .plyer .triangle{
+        height: 280px;
+        bottom: 25%;
+        left: 50%
+    }
+    .athlets .row:nth-child(3) {
+        margin-top: 160%
+    }
+    .athlets .row .connection,
+    .athlets .row .collaboration,
+    .athlets .row .growth{
+        margin-left: 0;
+        margin-top: 25%
+    }
+    .players h2{
+        text-align: center;
+        float: none;
+        margin-right: 0;
+        padding-left: 5%
+    }
+    .players .plyer{
+        left: -2px;
+        padding-top: 40%
+        
+    }
+    .players .plyer img{
+        height: 210px;
+        padding-top: 35%
+    }
+    .players .plyer .triangle{
+        height: 280px;
+        bottom: 2%;
+        left: 50%
+    }
+    .players .row:nth-child(2) {
+        margin-top: 160%
+    }
+    .players .row .connection,
+    .players .row .collaboration,
+    .players .row .growth{
+        margin-right: 0;
+        margin-top: 2%
+    }
 }
 @media screen and (min-width:321px) and (max-width:767px){
      nav .logo, nav .purpose{
@@ -308,8 +481,86 @@ nav .purpose{
         font-weight: bold;
 
     }
+    .athlets .plyer{
+        margin-left: 0
+    }
+    .athlets h2{
+        text-align: center;
+        float: none;
+        margin-right: 0;
+        padding-left: 5%
+    }
+    .athlets .plyer{
+        margin-left: auto
+    }
+    .athlets .plyer img{
+        height: 500px;
+        padding-top: 35%;
+        margin: auto
+    }
+    .athlets .plyer .triangle{
+        height: 400px;
+        bottom: 25%;
+        left: 50%
+    }
+    .athlets .row:nth-child(3) {
+        margin-top: 150%
+    }
+    .athlets .row .connection,
+    .athlets .row .collaboration,
+    .athlets .row .growth{
+        margin-left: 0;
+    }
+       .players h2{
+        text-align: center;
+        float: none;
+        margin-right: 0;
+        padding-left: 5%
+    }
+    .players .plyer{
+        left: -2px;
+        padding-top: 40%
+        
+    }
+    .players .plyer img{
+        height: 300px;
+        padding-top: 3%
+    }
+    .players .plyer .triangle{
+        height: 400px;
+        bottom: 2%;
+        left: 50%
+    }
+    .players .row:nth-child(2) {
+        margin-top: 120%
+    }
+    .players .row .connection,
+    .players .row .collaboration,
+    .players .row .growth{
+        margin-right: 0;
+        margin-top: 2%
+    }
 }
-
+@media screen and (min-width:768px) and (max-width:990px){
+     .athlets h2{
+        text-align: center;
+        float: none;
+        margin-right: 0;
+        padding-left: 45%
+    }
+    .athlets .row:nth-child(4){
+        padding-bottom: 2%
+    }
+      .players .plyer{
+        left: -2px;
+        padding-top: 40%
+        
+    }
+    .players .plyer img{
+        height: 500px;
+        padding-top: 3%
+    }
+}
 
 
 
