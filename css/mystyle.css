@@ -87,6 +87,9 @@ nav .purpose{
     text-transform: uppercase;
     font-size: 12px
 }
+.navbar ul li a:hover{
+	color: #fff
+}
 /*end navbar*/
 
 /*start buttons*/
@@ -101,7 +104,6 @@ nav .purpose{
     text-transform: uppercase;
     margin-right: 2%;
     border-radius: 30px;
-    
 }
 .btt .ios .icon, .btt .andro .icon{
     width: 30%;
@@ -122,7 +124,9 @@ nav .purpose{
     display: block;
     font-weight: bold;
 }
-
+.btt:hover .svg-inline--fa{
+	transform:rotateY(180deg)
+} 
 /*end buttons*/
 
 /*start athlets*/
@@ -259,31 +263,152 @@ nav .purpose{
 }
 /*end plyers*/
 
+/*start beactive*/
+.beactive .player,
+.beactive .be{
+	width: 50%;
+	float: left;
+}
+.beactive .be{
+	padding-top: 10%
+}
+.beactive .be h2{
+	 font-size: 3em;
+    text-transform: uppercase;
+    color: #e7e7e7;
+    margin-left: 5%
+}
+.beactive .be p{
+	width: 170px;
+	font-size: 13px;
+	padding-left: 5%;
+	line-height: 1.4;
+	font-weight: bold
+}
+.beactive .player img{
+	width: 100%
+}
+/*end beactive*/
 
+/*start fcontact*/
+.fcontact{
+	
+}
+.fcontact .contact,.fcontact .player{
+	width: 50%;
+	float: left
+}
+.fcontact .player img{
+	width: 100%
+}
+.fcontact .contact h2{
+	 font-size: 3em;
+    text-transform: uppercase;
+    color: #e7e7e7;
+    margin-left: 5%
+}
+.fcontact .contact p{
+	width: 170px;
+	font-size: 13px;
+	padding-left: 5%;
+	line-height: 1.4;
+	font-weight: bold
+}
+/*end fcontact*/
 
+/*start workit*/
+.workit{
+	position: relative
+}
+.workit .lable{
+	margin-top: 50%
+}
+.workit .player, .workit .work{
+	width: 50%;
+	float: left
+}
+.workit .player img{
+	width: 100%
+}
+.workit .work p{
+	width: 170px;
+	font-size: 13px;
+	padding-left: 5%;
+	line-height: 1.4;
+	font-weight: bold
+}
+.workit .work h2{
+	 font-size: 3em;
+    text-transform: uppercase;
+    color: #e7e7e7;
+    margin-left: 5%
+}
+.lable:hover{
+	transform:rotate(20deg)
+}
+/*end workit*/
 
+/*start footer*/
+footer{
+	background-image: url(../images/footer_bg.jpg);
+	min-height: 500px;
+	color: #fff;
+	position: relative;
+}
+footer .footer-top{
+	padding-top: 10%
+}
+footer .footer-top >span{
+	padding: 15px;
+	border-radius: 5px;
+	background-color: #5e42b0 ;
+}
+footer .footer-top> p{
+	color: #5e42b0
+}
+footer .footer-top .svg-inline--fa{
+	font-size: 25px
+}
+footer .footer-top h2{
+	display: inline;
+	font-size: 3em;
+}
+footer .footer-bottom{
+	background: rgba(15,16,49,.9);
+	overflow: hidden;
+	margin-top: 5%
+}
+footer .footer-bottom .logo,
+footer .footer-bottom .slinks, 
+footer .footer-bottom .terms{
+	width: 33%;
+	float: left
+	
+}
+footer .footer-bottom .logo{
+	padding-top: 1%;
+	font-weight: bold;
+	text-transform: uppercase
+}
+footer .footer-bottom .slinks ul li{
+	display: inline-block;
+	margin-right: 3%
+}
+footer .footer-bottom .terms{
+	font-weight: bold
+}
+footer .btt{
+	margin: auto;
+	padding-left: 25%
+}
+footer .btt .ios,
+footer .btt .andro
+{
+	width: 30%;
+	padding: 
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*end footer*/
 
 
 /*start My framework*/
@@ -311,7 +436,14 @@ nav .purpose{
     background: #5e42b0;
     width: 3px;
     transform: rotate(40deg)
-    
+}
+.lable{
+	position: absolute;
+	padding: 2% 3%;
+	background-color: #5e42b0;
+	color: #fff;
+	left: 46%;
+	margin-top: 15%	
 }
 /*end My framework*/
 
@@ -425,6 +557,60 @@ nav .purpose{
         margin-right: 0;
         margin-top: 2%
     }
+	.beactive .player,
+	.beactive .be{
+		width: 100%;
+		float: none;
+	}
+	.fcontact{
+		min-height: 300px
+	}
+	.fcontact .contact,.fcontact .player{
+		width: 100%;
+		float: none
+	}
+	.fcontact .player{
+		margin-top: -450px
+	}
+	.fcontact .contact{
+		margin-top: 300px
+	}
+	.workit .player, .workit .work{
+		width: 100%;
+		float: none
+	}
+	footer .footer-top h2{
+		display: block;
+		font-size: 1.5em;
+	}
+	footer .footer-bottom .logo,
+	footer .footer-bottom .slinks, 
+	footer .footer-bottom .terms{
+		width: 100%;
+		float: none
+	}
+	footer .footer-bottom{
+		margin-top: 50%;
+		padding-top: 5%
+	}
+	footer .btt{
+		margin-top: 20%
+	}
+	footer .footer-bottom .slinks{
+		margin-left: -5px
+	}
+	.beactive .lable{
+		left: 0;
+		margin-top: -320px
+	}
+	.fcontact .lable{
+		margin-top: -30PX;
+		left: -1px
+	}
+	.workit .lable{
+		margin-top: -350px;
+		left: -2px
+	}
 }
 @media screen and (min-width:321px) and (max-width:767px){
      nav .logo, nav .purpose{
@@ -518,7 +704,7 @@ nav .purpose{
         padding-left: 5%
     }
     .players .plyer{
-        left: -2px;
+        left: 2px;
         padding-top: 40%
         
     }
@@ -540,6 +726,53 @@ nav .purpose{
         margin-right: 0;
         margin-top: 2%
     }
+	.beactive .player,
+	.beactive .be{
+		width: 100%;
+		float: none;
+	}
+	.fcontact{
+		min-height: 300px
+	}
+	.fcontact .contact,.fcontact .player{
+		width: 100%;
+		float: none
+	}
+	.fcontact .player{
+		margin-top: -700px
+	}
+	.fcontact .contact{
+		margin-top: 800px
+	}
+	.workit .player, .workit .work{
+		width: 100%;
+		float: none
+	}
+	footer .footer-bottom .logo,
+	footer .footer-bottom .slinks, 
+	footer .footer-bottom .terms{
+		width: 100%;
+		float: none
+	}
+	
+	footer .btt{
+		margin-top: 20%
+	}
+	footer .footer-bottom .slinks{
+		margin-left: -5px
+	}
+	.beactive .lable{
+		left: 0;
+		margin-top: -320px
+	}
+	.fcontact .lable{
+		margin-top: -30PX;
+		left: -1px
+	}
+	.workit .lable{
+		margin-top: -300px;
+		left: -2px
+	}
 }
 @media screen and (min-width:768px) and (max-width:990px){
      .athlets h2{
@@ -560,6 +793,7 @@ nav .purpose{
         height: 500px;
         padding-top: 3%
     }
+	
 }
 
 
